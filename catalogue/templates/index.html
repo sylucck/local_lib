@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   <h1>Local Library Home</h1>
+   <p>Welcome to LocalLibrary , website development by <em>Sylvester and Co</em>!</p>
+   
+   
+   
+   
+   <div style="margin-left:30px;margin-top:30px">
+   <h2>Dynamic content</h2>
+   <p>The library has the following record counts:</p>
+   <ul>
+       <li><strong>Books:</strong> {{ num_of_books }}</li>
+       <li><strong>Copies:</strong> {{ num_of_instances }}</li>
+       <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+       <li><strong>Authors:</strong> {{ num_of_authors }}</li>
+       <li><strong>Copies On Loan:</strong> {{  num_instances_on_loan }}</li>
+       <li><strong>Genre:</strong> {{ num_of_genre }}</li>
+   </ul>
+
+   <p>You have visited this page {{ num_visits }} time {{ num_visits|pluralize }}.</p>
+   </div>
+{% endblock %}
