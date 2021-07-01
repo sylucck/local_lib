@@ -5,3 +5,8 @@ myvenv
 db.sqlite3
 /static
 .DS_Store 
+# Text backup files
+*.bak
+
+# Database
+*.sqlite3
